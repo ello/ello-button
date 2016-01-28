@@ -1,24 +1,26 @@
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ ello button
 
-#ello_button {
-  h2 {
-    margin-bottom: $gutter_px;
-    font-size: $bigText;
-    line-height: $bigTextLine;
-  }
+$gutter_px:       30px;
+$white:           white;
+$black:           black;
+$grey1:           #f1f1f1;
+$grey2:           #e5e5e5;
+$grey3:           #aaa;
+$smallColumn_px:  20px;
 
-  span,
-  textarea,
-  input[type=text] {
-    font-size: 0.875rem;
-  }
+@mixin vertical_align() {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
-  input[type=text],
-  textarea {
-    padding: $smallColumn_px;
-    width: 100%;
-    border: 1px solid $grey3;
-  }
+@mixin border_radius($size) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  border-radius: $size;
+}
 
   span {
     &.label {
@@ -139,4 +141,3 @@
       }
     }
   }
-}
