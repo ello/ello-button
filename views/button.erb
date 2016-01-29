@@ -3,7 +3,7 @@
 </head>
 
 <span class="icon <%= @color %>">
-  <a href="http://localhost:9292/<%= @username %>" target="_blank">
+  <a id="link" href="http://localhost:9292/<%= @username %>" target="_blank">
   <svg class='svgicon icon--circ icon--ello' viewBox='0 0 60 60'>
     <title>Ello</title>
     <path class='svg__bg' d='M0 0h60v60h-60z'></path>
@@ -17,6 +17,11 @@
     analytics.load("***REMOVED***");
     analytics.page();
     analytics.track('Badge Rendered', {
+      color: "<%= @color %>",
+      username: "<%= @username %>"
+    });
+    var link = document.getElementById('link');
+    analytics.trackLink(link, 'Badge Clicked', {
       color: "<%= @color %>",
       username: "<%= @username %>"
     });
