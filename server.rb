@@ -3,10 +3,6 @@ class HelloWorldApp < Sinatra::Base
     set :protection, :except => :frame_options
   end
 
-  get '/' do
-    "Hello, world!"
-  end
-
   get '/button' do
     @color    = params[:color]
     @username = params[:username]
