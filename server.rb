@@ -9,4 +9,8 @@ class HelloWorldApp < Sinatra::Base
 
     erb :button
   end
+
+  get '/:username' do
+    redirect "https://ello.co/#{params[:username]}"
+  end
 end
