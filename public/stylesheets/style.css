@@ -1,0 +1,33 @@
+span.icon {
+  margin: 0 auto;
+  display: block;
+  width: 40px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+span.icon svg {
+  width: 100%;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
+
+span.icon.black svg path.svg__bg {
+  fill: black;
+}
+
+span.icon.black svg path.svg__fg {
+  fill: white;
+}
+
+span.icon.white svg path.svg__bg {
+  fill: white;
+}
+
+span.icon.white svg path.svg__fg {
+  fill: black;
+}
