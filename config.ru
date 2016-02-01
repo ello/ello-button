@@ -5,5 +5,6 @@ require 'bundler/setup'
 require 'sinatra'
 require 'rubygems'
 require './server'
+require 'tilt/erb'
 
 run ElloButtonApp
