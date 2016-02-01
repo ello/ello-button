@@ -6,4 +6,4 @@ require 'sinatra'
 require 'rubygems'
 require './server'
 
-run HelloWorldApp
+run ElloButtonApp

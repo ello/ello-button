@@ -1,4 +1,4 @@
-class HelloWorldApp < Sinatra::Base
+class ElloButtonApp < Sinatra::Base
   configure do
     set :protection, :except => :frame_options
   end
