@@ -6,6 +6,6 @@ class ButtonTest < Minitest::Test
   def test_it_loads_button
     visit '/button'
 
-    assert page.has_css? 'icon--ello'
+    assert page.has_css? '.icon--ello'
   end
 end
