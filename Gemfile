@@ -9,5 +9,6 @@ group :development, :test do
   gem 'pry'
   gem 'minitest'
   gem 'capybara'
+  gem 'dotenv'
 end
 
