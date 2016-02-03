@@ -6,12 +6,31 @@
 span.icon {
   margin: 0 auto;
   display: block;
-  width: 40px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+span.icon.xsmall {
+  width: 18px;
+}
+
+span.icon.small {
+  width: 24px;
+}
+
+span.icon.medium {
+  width: 40px;
+}
+
+span.icon.large {
+  width: 50px;
+}
+
+span.icon.xlarge {
+  width: 70px;
 }
 
 span.icon svg {
