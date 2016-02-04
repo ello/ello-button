@@ -6,7 +6,7 @@ class ElloButtonApp < Sinatra::Base
   get '/button' do
     @color    = params[:color]
     @username = params[:username]
-    @size     = params[:size] || 'medium'
+    @size     = params[:size] || 'large'
 
     erb :button
   end

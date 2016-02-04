@@ -13,24 +13,16 @@ span.icon {
   transform: translateY(-50%);
 }
 
-span.icon.xsmall {
+span.icon.small {
   width: 18px;
 }
 
-span.icon.small {
+span.icon.medium {
   width: 24px;
 }
 
-span.icon.medium {
-  width: 40px;
-}
-
 span.icon.large {
-  width: 50px;
-}
-
-span.icon.xlarge {
-  width: 70px;
+  width: 40px;
 }
 
 span.icon svg {
