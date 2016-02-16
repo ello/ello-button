@@ -8,6 +8,7 @@ gem 'foreman'
 gem 'newrelic_rpm'
 
 group :development, :test do
+  gem 'rake', require: false
   gem 'pry'
   gem 'minitest'
   gem 'capybara'
