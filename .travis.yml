@@ -1,0 +1,10 @@
+sudo: required
+language: ruby
+bundler_args: "--without production"
+notifications:
+  email: false
+  slack:
+    on_success: change
+    on_failure: change
+    rooms:
+      secure: YgLekRXl1TitPAzRNRYMn395+Ieolx0EsWtzLyfn1uowvE93iakS0qdbnqUAQHO7MtbNG6klGeHVNr91fyZY1HYTkxVtWiiecduao+DE2E6CAHL8qZ3+FPpXYBXbWYWk2WJxtXwdsJCgj1tC1185iFxBaWAXWyr77miOZ+QCSP6ZOyfsjINCy6jJ80AN7Uki17uMKqirX8smLBlXCubf2s0YNQFM65HWWYHXc42CQziamGzCki6IAG64XKOdkrrum/jwzQJ0gzHUGC1YJknIqVsjylNof3o1oRWRlT2vMl+DA4HPgmQOWPusUgu304xZTCrd9Pt51kDnSNIoWCzGgNn7v1+xWbwVzvgGCgHHNM0JiqEn2covpTN0GS2Q0oyq4cAHHdjWad/k9xwfcZ0n7/j9g9w2lPzaQlH/K7F1F4hGObGtJ6ERREJWpJVwVvioGzqO/F3r2/va2G6yFhddwKP1SRhaPXbUa4MoBpHp/l9+c1AWxs0wOr4CuYp/ypunafUDF0J4NbYJZR0iijz5fhwLLNV60+6xBu2Zd8hM5ZjgZztvql/x33euiROwN1DNUdiSdvWoBrcyyU+Y/GRL+A1O/u0awS4mQ48friEmiBgiJwl6oc/1rzAKiak1Z0aybepgmZ12NnhHXopMAFp0TtyP7uE4lm98gCa6ChH0irU=

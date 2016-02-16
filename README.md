@@ -3,6 +3,8 @@
 # Ello-Button
 The Ello button is a [Sinatra](http://www.sinatrarb.com/) app that serves up an SVG icon for your website that will link to your Ello profile. [The Ello button is located within the WTF app](https://ello.co/wtf/resources/ello-button/) and is very simple to use -- just type in your username, choose your color, and copy & paste the code into your page's HTML.
 
+[![Build Status](https://travis-ci.org/ello/ello-button.svg?branch=master)](https://travis-ci.org/ello/ello-button)
+
 Screenshots:
 ![ello-button-page](https://cloud.githubusercontent.com/assets/867428/12539095/1f6dc27c-c2a8-11e5-983e-4524084ad6c3.png)
 
