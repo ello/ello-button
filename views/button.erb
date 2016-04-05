@@ -4,5 +4,7 @@
 
 <body id="ello-icon">
   <%= erb :_ello_icon, :locals => { color: @color, username: @username, size: @size } %>
-  <%= erb :_analytics, :locals => { color: @color, username: @username } %>
+  <% unless @skip_analytics %>
+    <%= erb :_analytics, :locals => { color: @color, username: @username } %>
+  <% end %>
 </body>

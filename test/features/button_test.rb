@@ -3,10 +3,26 @@ require_relative '../test_helper'
 class ButtonTest < Minitest::Test
   include Capybara::DSL
 
+  def setup
+    Capybara.current_driver = :rack_test
+  end
+
   def test_it_loads_button
     visit '/button'
 
     assert page.has_css? '.icon--ello'
+  end
+
+  def test_it_puts_in_a_tracking_tag
+    visit '/button'
+    assert page.has_css? 'script', visible: false
+  end
+
+  def test_it_respects_dnt
+    Capybara.current_driver = :rack_test_dnt
+    visit '/button'
+
+    assert page.has_no_css? 'script', visible: false
   end
 
   def test_it_loads_correct_button_color
