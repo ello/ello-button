@@ -14,4 +14,3 @@ group :development, :test do
   gem 'capybara'
   gem 'dotenv'
 end
-
