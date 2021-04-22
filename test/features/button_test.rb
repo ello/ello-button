@@ -28,6 +28,9 @@ class ButtonTest < Minitest::Test
   end
 
   def test_it_loads_correct_button_color
+    visit '/button'
+    assert page.has_css? '.black' # defaults to black
+
     visit '/button?color=black'
 
     assert page.has_css? '.black'

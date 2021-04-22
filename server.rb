@@ -6,8 +6,8 @@ class ElloButtonApp < Sinatra::Base
   end
 
   get '/button' do
-    @color          = params[:color]
     @username       = params[:username]
+    @color          = params[:color] || 'black'
     @size           = params[:size] || 'large'
     @skip_analytics = (request.env['HTTP_DNT'] == '1')
 
