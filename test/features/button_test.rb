@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../test_helper'
 
 class ButtonTest < Minitest::Test
@@ -42,8 +44,7 @@ class ButtonTest < Minitest::Test
     find('a').click
 
     # Capybara is strict with redirects compared to browsers, so this will allow the test from breaking
-    rescue Capybara::InfiniteRedirectError
-
+  rescue Capybara::InfiniteRedirectError
     assert_equal page.current_url, 'https://ello.co/ello'
   end
 end

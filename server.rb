@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class ElloButtonApp < Sinatra::Base
   configure do
-    set :protection, :except => :frame_options
+    set :protection, except: :frame_options
   end
 
   get '/button' do
