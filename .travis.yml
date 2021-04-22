@@ -1,6 +1,6 @@
 sudo: required
 language: ruby
-rvm: 2.3.0
+rvm: 2.7.3
 bundler_args: "--without production"
 notifications:
   email: false
